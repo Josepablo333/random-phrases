@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2 {
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.App {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    box-shadow: 1px 1px 20px #000500;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card_up  {
+    display: flex;
+    flex-direction: row;
+}
+
+.card .card_up .card_icon {
+    font-size: 100px;
+    margin: 10px;
+}
+
+.card .card_up .card_quote {
+    margin: 20px;
+}
+
+.card .card_down {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    align-items: flex-end;
+}
+
+.card .card_down .card_author {
+    margin: 10px;
+}
+
+.card .card_down .card_btn {
+    margin: 10px;
+    color: white;
+    border: 0;
+    width: 50px;
+    aspect-ratio: 1;
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px #000500;
+    transition: box-shadow 200ms ease;
+}
+
+.card .card_down .card_btn:hover {
+    box-shadow: 0 0 5px;
+    transition: box-shadow 200ms ease;
+}
+@media (max-width: 550px) {
+    .card {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        width: 300px;
+    }
+  }
